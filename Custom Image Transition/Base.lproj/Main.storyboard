@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Custom_Image_Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-H6-TLa">
+                                <rect key="frame" x="0.0" y="72" width="375" height="816"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar_dates" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-mo-cuj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city_Image" translatesAutoresizingMaskIntoConstraints="NO" id="bJp-VS-yey">
+                                        <rect key="frame" x="0.0" y="126" width="375" height="149"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_image_1" translatesAutoresizingMaskIntoConstraints="NO" id="LDN-oo-ohg">
+                                        <rect key="frame" x="71" y="418" width="289" height="128"/>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BmZ-k9-5j3" appends="YES" id="YP0-5U-Gv5"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_image_2" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-m9-AcX">
+                                        <rect key="frame" x="71" y="598" width="289" height="128"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar_header" translatesAutoresizingMaskIntoConstraints="NO" id="IwK-Tf-0bB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="mainCalendarImage" destination="rv5-mo-cuj" id="Qnq-cs-86s"/>
+                        <outlet property="scrollView" destination="NQ4-H6-TLa" id="dy1-aK-Dx0"/>
+                        <segue destination="e2h-zk-OZw" kind="show" identifier="showDetail" id="ROh-92-MgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BmZ-k9-5j3">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="TUq-FF-bLg"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="289.5" y="387"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bfi-Em-RpW">
+            <objects>
+                <viewController id="e2h-zk-OZw" customClass="DetailViewController" customModule="Custom_Image_Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yl6-Tf-pCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="vpH-7x-DYO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oDR-wm-l2n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_image_1" translatesAutoresizingMaskIntoConstraints="NO" id="Aqo-UP-3LE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="detail_event_list" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-d3-bFx">
+                                <rect key="frame" x="0.0" y="231" width="375" height="436"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21v-Lg-nMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.5" y="220.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar_dates" width="375" height="1356"/>
+        <image name="calendar_header" width="375" height="75"/>
+        <image name="city_Image" width="375" height="281"/>
+        <image name="detail_event_list" width="375" height="531"/>
+        <image name="event_image_1" width="375" height="229"/>
+        <image name="event_image_2" width="375" height="225"/>
+    </resources>
+</document>
