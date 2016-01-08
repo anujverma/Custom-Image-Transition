@@ -54,6 +54,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="eventImage" destination="LDN-oo-ohg" id="pCO-vc-vqZ"/>
                         <outlet property="mainCalendarImage" destination="rv5-mo-cuj" id="Qnq-cs-86s"/>
                         <outlet property="scrollView" destination="NQ4-H6-TLa" id="dy1-aK-Dx0"/>
                         <segue destination="e2h-zk-OZw" kind="show" identifier="showDetail" id="ROh-92-MgT"/>
@@ -93,6 +94,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headerImage" destination="Aqo-UP-3LE" id="z0B-QP-LGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21v-Lg-nMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

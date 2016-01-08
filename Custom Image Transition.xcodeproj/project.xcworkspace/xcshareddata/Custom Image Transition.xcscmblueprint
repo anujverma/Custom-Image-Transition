@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "77A7C8DB73C94F0E05AE4F7F663BC0FEFC067BE2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "77A7C8DB73C94F0E05AE4F7F663BC0FEFC067BE2" : 0,
+    "8AC9FF77DEFC97C6D9494BDA4942B35C19A87CD5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "83979A57-3CA8-4E9D-9CF3-9AAF898EF990",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "77A7C8DB73C94F0E05AE4F7F663BC0FEFC067BE2" : "Custom%20Image%20Transition\/",
+    "8AC9FF77DEFC97C6D9494BDA4942B35C19A87CD5" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Custom Image Transition",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Custom Image Transition.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anujverma\/Custom-Image-Transition.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "77A7C8DB73C94F0E05AE4F7F663BC0FEFC067BE2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/viramesh\/Pager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8AC9FF77DEFC97C6D9494BDA4942B35C19A87CD5"
+    }
+  ]
+}

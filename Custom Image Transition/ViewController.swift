@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var mainCalendarImage: UIImageView!
+    @IBOutlet weak var eventImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,12 @@ class ViewController: UIViewController {
 
     @IBAction func imageTapped(sender: UITapGestureRecognizer) {
         performSegueWithIdentifier("showDetail", sender: self)
+        print("Image tapped")
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destinationVC = segue.destinationViewController as! DetailViewController
+        destinationVC.imageDVC = eventImage.image
+    }
 }
 

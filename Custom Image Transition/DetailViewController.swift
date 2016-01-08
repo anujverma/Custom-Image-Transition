@@ -10,6 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
 
+    @IBOutlet weak var headerImage: UIImageView!
+    var imageDVC: UIImage!
+    
     var isPresenting: Bool = true
     
     required init(coder aDecoder: NSCoder) {
@@ -23,7 +26,7 @@ class DetailViewController: UIViewController, UIViewControllerTransitioningDeleg
         super.viewDidLoad()
         
 
-
+        headerImage.image = imageDVC
         // Do any additional setup after loading the view.
     }
 
