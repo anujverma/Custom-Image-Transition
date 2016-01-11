@@ -14,22 +14,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1356"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-H6-TLa">
-                                <rect key="frame" x="0.0" y="72" width="375" height="816"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="700"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar_dates" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-mo-cuj">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
-                                        <animations/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city_Image" translatesAutoresizingMaskIntoConstraints="NO" id="bJp-VS-yey">
-                                        <rect key="frame" x="0.0" y="126" width="375" height="149"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1356"/>
                                         <animations/>
                                     </imageView>
                                     <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_image_1" translatesAutoresizingMaskIntoConstraints="NO" id="LDN-oo-ohg">
-                                        <rect key="frame" x="71" y="418" width="289" height="128"/>
+                                        <rect key="frame" x="71" y="797" width="289" height="128"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -37,7 +33,15 @@
                                         </connections>
                                     </imageView>
                                     <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_image_2" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-m9-AcX">
-                                        <rect key="frame" x="71" y="598" width="289" height="128"/>
+                                        <rect key="frame" x="71" y="975" width="289" height="128"/>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xlp-mI-TPg" appends="YES" id="wCY-z6-6yS"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city_Image" translatesAutoresizingMaskIntoConstraints="NO" id="bJp-VS-yey">
+                                        <rect key="frame" x="0.0" y="510" width="375" height="149"/>
                                         <animations/>
                                     </imageView>
                                 </subviews>
@@ -52,9 +56,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="1356"/>
                     <connections>
-                        <outlet property="eventImage" destination="LDN-oo-ohg" id="pCO-vc-vqZ"/>
+                        <outlet property="eventImage" destination="uCp-m9-AcX" id="R8N-Bv-9qy"/>
                         <outlet property="mainCalendarImage" destination="rv5-mo-cuj" id="Qnq-cs-86s"/>
                         <outlet property="scrollView" destination="NQ4-H6-TLa" id="dy1-aK-Dx0"/>
                         <segue destination="e2h-zk-OZw" kind="show" identifier="showDetail" id="ROh-92-MgT"/>
@@ -64,6 +68,11 @@
                 <tapGestureRecognizer id="BmZ-k9-5j3">
                     <connections>
                         <action selector="imageTapped:" destination="BYZ-38-t0r" id="TUq-FF-bLg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xlp-mI-TPg">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="VM4-35-epX"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
